@@ -23,10 +23,6 @@ app.use(cors())
 app.use("/api/register", register)
 app.use("/api/login", login)
 
-// HEROKU DEPLOYMENT
-if(process.env.NODE_EVN == "production"){
-  app.use(express.static("client/dist"))
-}
 
 // PORT
 const PORT = process.env.PORT || 3000
