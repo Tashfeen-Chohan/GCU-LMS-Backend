@@ -19,7 +19,6 @@ mongoose
 
 // MIDDLEWARE FUNCTIONS
 app.use(express.json())
-// app.use(express.urlencoded())
 app.use(cors())
 app.use("/api/register", register)
 app.use("/api/login", login)
